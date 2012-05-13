@@ -14,7 +14,7 @@ module APN
   class SenderDaemon
     
     def initialize(args)
-      @options = {:worker_count => 1, :environment => :development, :delay => 5}
+      @options = {:worker_count => 1, :environment => :production, :delay => 5}
       
       optparse = OptionParser.new do |opts|
         opts.banner = "Usage: #{File.basename($0)} [options] start|stop|restart|run"
